@@ -1,11 +1,11 @@
 <html>
-<head>
-  <title>Things</title>
-</head>
-<body>
-  <h1>
-    Things
-  </h1>
-  <p>Some stuff about things goes here.</p>
-</body>
+  <head>
+    <title>Things</title>
+  </head>
+  <body>
+    <h1>Things</h1>
+    <p>Some stuff about things goes here.</p>
+    {% csrf_token %} {{ form.as_p }}
+    <input type="submit" value="submit" />
+  </body>
 </html>
